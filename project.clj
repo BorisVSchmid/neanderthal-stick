@@ -3,8 +3,8 @@
   :url "https://github.com/katox/neanderthal-stick"
   :license {:name "Eclipse Public License 2.0"
             :url "https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.html"}
-  :dependencies [[org.clojure/clojure "1.10.1"]
-                 [uncomplicate/neanderthal "0.33.0"]
+  :dependencies [[org.clojure/clojure "1.12.0"]
+                 [uncomplicate/neanderthal "0.53.2"]
                  [com.taoensso/nippy "2.15.0"]]
 
   :codox {:metadata {:doc/format :markdown}
@@ -23,12 +23,12 @@
   :repl-options {:init-ns neanderthal-stick.core}
 
   :profiles {:dev {:plugins [[lein-midje "3.2.1"]
-                             [lein-codox "0.10.6"]]
+                             [lein-codox "0.10.8"]]
                    :global-vars {*warn-on-reflection* true
                                  *assert* false
                                  *unchecked-math* :warn-on-boxed
                                  *print-length* 128}
-                   :dependencies [[midje "1.9.9"]
+                   :dependencies [[midje "1.10.10"]
                                   [org.clojure/test.check "1.0.0"]]}
              :java8 {:jvm-opts ^:replace ["-Dclojure.compiler.direct-linking=true"]}}
 
