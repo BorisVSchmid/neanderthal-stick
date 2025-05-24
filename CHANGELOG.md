@@ -3,6 +3,14 @@ All notable changes to this project will be documented in this file. This change
 
 ## [Unreleased]
 
+## [0.5.0] - 2025-02-27
+### Changed
+- Updated to Neanderthal 0.53.2.
+- Updated to Nippy 3.5.0.
+- Removed obsolete JVM flag from `project.clj`.
+- Aligned example project and README with latest versions.
+
+
 ## [0.4.0] - 2020-07-26
 ## Changes
 - Updated to the Neanderthal 0.33 release.

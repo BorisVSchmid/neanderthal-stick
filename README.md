@@ -22,8 +22,8 @@ a factory.
 
 Add the necessary dependency to your project:
 
-```$clj
-    [neanderthal-stick "0.4.0]
+```clojure
+    [neanderthal-stick "0.5.0"]
 ```
 
 ## Usage
@@ -38,7 +38,7 @@ For reference documentation refer to the project
 [github pages](https://katox.github.io/neanderthal-stick/index.html).
 
 *Note*: The API is very early stage and subject to change thus it is
-in the `expertimental` namespace.
+in the `experimental` namespace.
 
 ### Saving to File
 
