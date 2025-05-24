@@ -24,8 +24,8 @@
      (do
        (nippy/freeze-to-out! data-out (describe x))
        (transfer! x data-out))))
-  ([x data-out]
-   (save! data-out x nil)))
+   ([x data-out]
+    (save! x data-out nil)))
 
 (defn save-to-file!
   "Save the Neanderthal matrix or the vector `x` to the file path name `file-path`. Opens `file-path as data output stream,
