@@ -28,6 +28,13 @@
                                  *unchecked-math* :warn-on-boxed
                                  *print-length* 128}
                    :dependencies [[midje "1.10.10"]
+                                  ;; depedencies added to test on windows without a global MKL installed.
+                                  ;; note: also install CUDA Toolkit 12.6 Update 3.
+                                  [org.bytedeco/mkl "2025.0-1.5.11" :classifier windows-x86_64-redist]
+                                  [org.bytedeco/cuda "12.6-9.5-1.5.11" :classifier windows-x86_64-redist]
+                                  ;; same dependencies if on linux.
+                                  ;[org.bytedeco/mkl "2025.0-1.5.11" :classifier linux-x86_64-redist]
+                                  ;[org.bytedeco/cuda "12.6-9.5-1.5.11" :classifier linux-x86_64-redist]
                                   [org.clojure/test.check "1.0.0"]]}
              :java8 {:jvm-opts ^:replace ["-Dclojure.compiler.direct-linking=true"]}}
 
