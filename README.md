@@ -320,6 +320,15 @@ There is an example in the repository:
 TLDR; you need to define a new self-description ability, a constructor
 from that descriptor and the actual content save and load `transfer!` multimethods.
 
+## Running Tests
+
+Use the development profile so that the native libraries are available when
+running the test suite:
+
+```bash
+lein with-profile dev midje
+```
+
 ## License
 
 Copyright © 2019-2020 Kamil Toman
