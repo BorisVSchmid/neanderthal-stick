@@ -13,7 +13,7 @@
             [uncomplicate.neanderthal.block :as block]
             [uncomplicate.neanderthal.core :as core :refer [transfer!]]
             [uncomplicate.neanderthal.internal.api :as api]
-            [uncomplicate.neanderthal.internal.host.buffer-block])
+            [uncomplicate.neanderthal.internal.host.buffer_block])
   (:import (java.io OutputStream InputStream DataOutput DataInput)
            (java.nio ByteBuffer)
            (java.nio.channels Channels)
